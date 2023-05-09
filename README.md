@@ -9,7 +9,14 @@ The app will be used by employees and managers with the next requirements:
 * **Manager** can manage users and review abscense requests.
 
 ## Installation
+
 ### Frontend
-Move into frontend folder and type `npm install`.
+Go to the frontend folder and execute the command `npm install`.
+
+### Backend
+Go to the backend folder and execute the command `npm install`
+
 ## Execution
-Move into frontend and execute the command `npm start` and follow the instructions.
+Go to the backend folder and execute the command `npm start` (you can check that it is working by navigating to http://localhost:5000/api).
+
+Go to the frontend folder and execute the command `npm start`, open your favorite browser and navigate to 'http://localhost:4200'
