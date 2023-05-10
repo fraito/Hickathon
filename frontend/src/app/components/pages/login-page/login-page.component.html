@@ -1,0 +1,37 @@
+<div id="login-form-wrap" class="container">
+  <div class="details">
+    <!-- <app-title title="Login"></app-title> -->
+    Login
+
+    <form id="login-form" [formGroup]="loginForm" (ngSubmit)="submit()">
+
+      <div class="input-container">
+        <input type="text" class="username" placeholder="Username" formControlName="username">
+        <div class="error-list" *ngIf="fc.username.errors && isSubmitted">
+          <div *ngIf="fc.username.errors.required">Enter the username, please</div>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="password" class="password" placeholder="Password" formControlName="password">
+      </div>
+
+      <input type="submit" value="Login">
+
+    <!-- <text-input
+    [control]="fc.email"
+    [showErrorsWhen]="isSubmitted"
+    type="email"
+    label="Email">
+  </text-input>
+
+  <text-input
+  [control]="fc.password"
+  [showErrorsWhen]="isSubmitted"
+  type="password"
+  label="Password">
+</text-input> -->
+
+    <!-- <default-button text="Login"></default-button> -->
+    </form>
+  </div>
+</div>
